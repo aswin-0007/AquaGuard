@@ -1,0 +1,272 @@
+body {
+  /* Specify the background image URL and properties */
+  background-image: url('waterback.avif'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-position: center center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+
+nav {
+  background-color: #0c043a;
+  color: #fff;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#introduction, #test-quality, #articles, #contact {
+  margin-bottom: 40px;
+}
+
+#test-quality form .form-group {
+  margin-bottom: 15px;
+
+  
+}
+
+#test-quality form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#test-quality form input[type="text"],
+#test-quality form input[type="number"] {
+  /*width: 10%;*/
+  padding: 2px;
+  border: 1px solid #490fdc;
+  border-radius: 5px;
+  height: 20px;
+}
+
+#test-quality form button {
+  width: 30%;
+  padding: 10px;
+  background-color: #19084f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+#qualityResult {
+  margin-top: 20px;
+  font-weight: bold;
+  color: inherit; /* Inherit text color */
+}
+
+
+#articles p {
+  line-height: 1.5;
+}
+
+#contact p {
+  line-height: 1.5;
+}
+footer{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  background-color: #111;
+  margin-top: 200px;
+}
+.socialicons{
+display: flex;
+justify-content: center;
+}
+.socialicons a{
+text-decoration: none;
+padding: 10px;
+background-color: white;
+margin: 10px;
+border-radius: 50%;
+}
+.socialicons a i{
+font-size: 2em;
+color: black;
+opacity: 0.9;
+
+}
+.socialicons a:hover{
+background-color: #111;
+transform: 0.5s;
+}
+.socialicons a:hover i{
+color: white;
+transition: 0.5s;
+
+}
+
+
+.footerNav{
+  margin:30px 0;
+}
+.footerNav ul{
+  display:flex;
+  justify-content: center;
+}
+.footerNav ul li a{
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+  color: aqua;
+}
+.footerbottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerbottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+    flex-direction: column;
+  }
+}
+
+ul{
+list-style-type: none;
+}
+li{
+float: left;
+
+}
+li a{
+display:block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+footer {
+  height: 250px;
+  background-color: black;
+  width: 100%; /* Position the footer */
+  bottom: 0; /* Stick it to the bottom */
+  left: 0; /* Align it to the left */
+}
+
+
+#waterQualityForm{
+width: 400px;
+border-radius: 20px;
+  border: 4px solid black;
+  background: linear-gradient(45deg,rgb(204, 213, 218),rgb(111, 111, 173),rgb(7, 24, 45));
+  padding: 20px;
+  vertical-align: baseline;
+  display: grid;
+  place-items: center;
+  background-size: 300% 300%;
+  animation: color 5s ease-in infinite;
+  /*justify-content: center;
+  align-items: center;*/
+}
+@keyframes color{
+0%{
+  background-position: 0 50%;
+}
+50%{
+  background-position: 100% 50%;
+}
+100%{
+  background-position: 0 50%;
+}
+}
+#test-quality{
+width: 1100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+p{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size:large;
+}
+label{
+font-weight: 600;
+}
+.imge{
+width: 180px;
+height: 54px;
+}
+h2{
+color: #0c043a;
+font-weight: 700;
+font-size: 40px;
+}
+#fecal_coliform{
+  margin-left: 21px;
+}
+#total_coliform{
+  margin-left: 21px;
+}
+h3{
+  color: #19084f;
+}
+#output {
+  border: 1px solid #000; /* Black border */
+  padding: 10px;
+  margin-top: 20px;
+  height: 100px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  border-radius: 5px; /* Rounded corners */
+}
